@@ -19,7 +19,7 @@ Backend de api de clientes
 #### Post Create Client
 
 ```http
-  Post /api/clients/${id}
+  Post /api/clients
 ```
 
 | Parameter | Type     | Description                       |
