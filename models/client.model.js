@@ -15,6 +15,26 @@ const Schema = mongoose.Schema({
     required: true
   },
 
+  address:{
+    type:String,
+    required: true
+  },
+  age:{
+    type: Number,
+    required: false
+  },
+  phone:{
+    type: String,
+    required:true
+  },
+  email:{
+    type: String,
+    required:false
+  },
+  updatedDate:{
+    type:Date,
+    required: false
+  }
 
 });
 
@@ -22,28 +42,4 @@ const model = mongoose.model('Clients', Schema);
 
 module.exports = model;
 
-/*
-address:{
-  type:String,
-  required: true
-},
-age:{
-  type: Number,
-  required: false
-},
-phone:{
-  type: String,
-  required:true
-},
-email:{
-  type: String,
-  required:false
-},
-createdDate:{
-  type:Date,
-  required: True
-},
-updatedDate:{
-  type:Date,
-  required: false
-} */
+
